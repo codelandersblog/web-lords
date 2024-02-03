@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { NavigationBar } from "./ui/NavigationBar";
+import { lusitana } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${lusitana.className} bg-primary-light dark:bg-primary-dark text-on-primary-light dark:text-on-primary-dark`}
+      >
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }
