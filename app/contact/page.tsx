@@ -1,7 +1,9 @@
+import { Heading } from "../ui/Heading";
+
 export default function Contact() {
   return (
     <main>
-      <h1>Contact page</h1>
+      <Heading>Contact page</Heading>
     </main>
   );
 }

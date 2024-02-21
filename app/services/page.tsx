@@ -1,7 +1,9 @@
+import { Heading } from "../ui/Heading";
+
 export default function Services() {
   return (
     <main>
-      <h1>Services page</h1>
+      <Heading>Services page</Heading>
     </main>
   );
 }

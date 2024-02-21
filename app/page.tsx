@@ -1,7 +1,9 @@
+import { Heading } from "./ui/Heading";
+
 export default function Home() {
   return (
     <main>
-      <h1>Landing page</h1>
+      <Heading>Landing page</Heading>
     </main>
   );
 }
